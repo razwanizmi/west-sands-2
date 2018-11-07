@@ -1,0 +1,59 @@
+.gallery {
+  display: flex;
+  height: 56.4rem;
+  position: relative;
+
+  &__frame {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+
+    &:first-child {
+      flex: 2;
+
+      @include respond(tab-port) {
+        display: block;
+        flex: 1;
+      }
+    }
+  }
+
+  &__image {
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    height: 100%;
+    transition: all 500ms;
+    width: 100%;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__btn {
+    bottom: 2rem;
+    position: absolute;
+    right: 2rem;
+    display: none;
+
+    @media (min-width: 56.26em) {
+      display: block;
+    }
+
+    &--mobile {
+      color: $color-primary;
+      display: none;
+      font-size: 2.5rem;
+
+      @include respond(tab-port) {
+        display: block;
+      }
+    }
+  }
+}

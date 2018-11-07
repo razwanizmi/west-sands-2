@@ -1,0 +1,30 @@
+@mixin button($color, $background-color, $hover-background-color) {
+  background-color: $background-color;
+  border: 1pt solid $background-color;
+  border-radius: 100px;
+  color: $color;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  height: 2.9rem;
+  line-height: 2.9rem;
+  min-width: 10rem;
+  padding: 0 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 250ms, border-color 250ms;
+
+  &:hover {
+    background-color: $hover-background-color;
+    border-color: $hover-background-color;
+  }
+}
+
+.btn-primary {
+  @include button($color-white, $color-secondary-dark, $color-secondary-light);
+}
+
+.btn-secondary {
+  @include button($color-white, $color-primary, $color-primary-light);
+}
