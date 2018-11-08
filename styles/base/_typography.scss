@@ -19,6 +19,17 @@ body {
   font-weight: 500;
   line-height: 4.4rem;
   text-transform: capitalize;
+
+  &--section {
+    &::before {
+      background-color: $color-primary;
+      content: "";
+      display: block;
+      height: 1px;
+      margin-bottom: 1rem;
+      width: 6rem;
+    }
+  }
 }
 
 .header-3 {
