@@ -1,4 +1,5 @@
-.section-summary {
+.section-summary,
+.section-reviews {
   margin: 0 auto;
   max-width: 114rem;
   padding: 2rem 2rem 6rem 2rem;
@@ -27,7 +28,7 @@
   }
 
   &__icon {
-    margin-right: 1.5rem;
+    min-width: 4rem;
   }
 
   &__title {
@@ -67,7 +68,7 @@
   }
 
   &__text-box {
-    max-width: 57rem;
+    max-width: 55rem;
     padding-top: 3rem;
 
     &--left {
@@ -107,5 +108,88 @@
     @include respond(tab-port) {
       display: none;
     }
+  }
+}
+
+.review {
+  border-bottom: 1px solid $color-grey-light;
+  padding: 3rem 0;
+
+  &__header {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+
+  &__left {
+    align-items: center;
+    background-color: rgba($color-black, 0.26);
+    border-radius: 50%;
+    color: $color-grey;
+    display: flex;
+    font-size: 1.3rem;
+    height: 3rem;
+    justify-content: center;
+    width: 3rem;
+  }
+
+  &__center {
+    flex: 1;
+    margin: 0 2rem;
+  }
+
+  &__right {
+  }
+
+  &__body {
+  }
+
+  &__reviewer {
+    font-weight: 500;
+  }
+
+  &__b-logo {
+    color: $color-blue;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  &__ta {
+    height: 2.5rem;
+    width: auto;
+  }
+
+  &__more {
+    color: $color-secondary-dark;
+    cursor: pointer;
+    font-weight: 400;
+    margin-left: 1rem;
+  }
+}
+
+.review-more {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+
+  &__left {
+  }
+
+  &__right {
+  }
+
+  &__ta-review {
+    height: 2.5rem;
+    width: auto;
+  }
+
+  &__title {
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  &__link {
+    color: $color-secondary-dark;
+    cursor: pointer;
+    font-weight: 500;
   }
 }
