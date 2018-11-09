@@ -1,5 +1,6 @@
 .section-summary,
-.section-reviews {
+.section-reviews,
+.section-amenities {
   margin: 0 auto;
   max-width: 114rem;
   padding: 2rem 2rem 6rem 2rem;
@@ -191,5 +192,55 @@
     color: $color-secondary-dark;
     cursor: pointer;
     font-weight: 500;
+  }
+}
+
+.amenities {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }
+
+  &__header {
+    font-weight: 500;
+    margin: 2rem 0;
+  }
+
+  &__ul {
+    list-style-position: inside;
+  }
+
+  &__li {
+    margin: 1rem 0;
+  }
+
+  &__more {
+    color: $color-secondary-dark;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 2rem;
+  }
+
+  &__box {
+    border: 1px solid $color-grey-light;
+    padding: 3rem;
+
+    @include respond(tab-port) {
+      margin-top: 3rem;
+    }
+  }
+
+  &__icon {
+    height: 5rem;
+    width: auto;
+  }
+
+  &__layout {
+    color: $color-grey-dark;
+    margin-top: 1rem;
   }
 }
