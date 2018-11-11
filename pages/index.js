@@ -6,6 +6,7 @@ import Highlights from "../components/room/Highlights";
 import Reviews from "../components/room/Reviews";
 import Amenities from "../components/room/Amenities";
 import Offer from "../components/room/Offer";
+import StickyNav from "../components/room/StickyNav";
 import MoreRooms from "../components/room/MoreRooms";
 import Footer from "../components/shared/Footer";
 
@@ -13,6 +14,7 @@ const Index = () => (
   <Layout>
     <Navigation />
     <Gallery />
+    <StickyNav />
     <Summary />
     <Highlights />
     <Reviews />
