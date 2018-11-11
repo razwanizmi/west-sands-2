@@ -5,6 +5,9 @@ import Summary from "../components/room/Summary";
 import Highlights from "../components/room/Highlights";
 import Reviews from "../components/room/Reviews";
 import Amenities from "../components/room/Amenities";
+import Offer from "../components/room/Offer";
+import MoreRooms from "../components/room/MoreRooms";
+import Footer from "../components/shared/Footer";
 
 const Index = () => (
   <Layout>
@@ -14,6 +17,9 @@ const Index = () => (
     <Highlights />
     <Reviews />
     <Amenities />
+    <Offer />
+    <MoreRooms />
+    <Footer />
   </Layout>
 );
 

@@ -81,12 +81,6 @@ class Navbar extends React.Component {
     showSideNav: false
   };
 
-  handleScroll = () => {
-    this.setState(() => ({
-      hasTint: scrollY > innerHeight ? true : false
-    }));
-  };
-
   hideSideNav = () => {
     this.setState(() => ({
       showSideNav: false
@@ -98,20 +92,6 @@ class Navbar extends React.Component {
       showSideNav: true
     }));
   };
-
-  hideNotification = () => {
-    this.setState(() => ({
-      showNotification: false
-    }));
-  };
-
-  componentDidMount() {
-    addEventListener("scroll", this.handleScroll);
-  }
-
-  componentWillUnmount() {
-    removeEventListener("scroll", this.handleScroll);
-  }
 
   render() {
     const { hasTint, showNotification, showSideNav } = this.state;
