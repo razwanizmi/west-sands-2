@@ -9,12 +9,16 @@ import Offer from "../components/room/Offer";
 import StickyNav from "../components/room/StickyNav";
 import MoreRooms from "../components/room/MoreRooms";
 import Footer from "../components/shared/Footer";
+import QuoteForm from "../components/shared/QuoteForm";
 
 const Index = () => (
   <Layout>
     <Navigation />
     <Gallery />
     <StickyNav />
+    <section className="section-side-form">
+      <QuoteForm />
+    </section>
     <Summary />
     <Highlights />
     <Reviews />

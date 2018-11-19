@@ -436,3 +436,17 @@
     }
   }
 }
+
+.section-side-form {
+  position: sticky;
+  margin: 0 auto;
+  max-width: 114rem;
+  text-align: right;
+  top: 11.5rem;
+  height: 0;
+  z-index: 2;
+
+  @include respond(tab-port) {
+    display: none;
+  }
+}

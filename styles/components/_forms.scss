@@ -1,0 +1,61 @@
+.side-form {
+  border: 1px solid $color-grey-light;
+  background-color: rgba($color-white, 0.75);
+  display: inline-block;
+  margin-top: 15.45rem;
+  padding: 1.5rem 2rem;
+  text-align: left;
+
+  &__header {
+    border-bottom: 0.5px solid $color-grey-dark;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  &__group {
+    margin: 1rem 0;
+
+    &--submit {
+      margin-top: 2rem;
+    }
+  }
+
+  &__label {
+    display: block;
+    font-size: 1.1rem;
+  }
+
+  &__dates {
+    align-items: center;
+    border: 1px solid $color-default-border;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    min-height: 38px;
+    padding: 2px;
+
+    input {
+      border: none;
+      text-align: center;
+      width: 10rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    i {
+      margin: 0 1rem;
+    }
+  }
+
+  &__input {
+    border: 1px solid $color-default-border;
+    border-radius: 4px;
+    min-height: 38px;
+    padding: 0 10px;
+    width: 100%;
+  }
+}

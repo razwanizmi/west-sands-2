@@ -41,3 +41,11 @@
 .u-margin-y-big {
   margin: 8rem 0 !important;
 }
+
+.u-narrow-container {
+  max-width: 74rem;
+
+  @include respond(tab-port) {
+    max-width: 100%;
+  }
+}
