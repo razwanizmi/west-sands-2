@@ -4,6 +4,8 @@
   display: flex;
   line-height: 2;
   padding: 10rem 3rem;
+  position: relative;
+  z-index: 2;
 
   &__column {
     flex: 1;

@@ -1226,7 +1226,9 @@ li.react-datepicker__time-list-item--disabled:hover {
   color: #d8d8d8;
   display: flex;
   line-height: 2;
-  padding: 10rem 3rem; }
+  padding: 10rem 3rem;
+  position: relative;
+  z-index: 2; }
   .footer__column {
     flex: 1;
     margin: 0 1rem 1rem 0; }
@@ -1275,7 +1277,7 @@ li.react-datepicker__time-list-item--disabled:hover {
   height: 6.4rem;
   justify-content: space-between;
   left: 0;
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100vw;
   z-index: 10; }
@@ -1435,9 +1437,12 @@ li.react-datepicker__time-list-item--disabled:hover {
     padding: 0 2rem; }
 
 .highlight-photos {
+  background-color: #fff;
   display: flex;
   justify-content: center;
-  margin-top: 3rem; }
+  margin-top: 3rem;
+  position: relative;
+  z-index: 2; }
   @media (max-width: 56.25em) {
     .highlight-photos {
       flex-direction: column; } }
@@ -1566,7 +1571,9 @@ li.react-datepicker__time-list-item--disabled:hover {
   background-size: cover;
   background-position: top;
   margin-bottom: 6rem;
-  padding: 2rem; }
+  padding: 2rem;
+  position: relative;
+  z-index: 2; }
 
 .offer-box {
   border: 2px solid #fff;
@@ -1608,9 +1615,13 @@ li.react-datepicker__time-list-item--disabled:hover {
     .offer-box__input:focus {
       outline: none; }
 
-@media (max-width: 56.25em) {
-  .more-rooms--desktop {
-    display: none; } }
+.more-rooms--desktop {
+  background-color: #fff;
+  position: relative;
+  z-index: 2; }
+  @media (max-width: 56.25em) {
+    .more-rooms--desktop {
+      display: none; } }
 
 .more-rooms--tab {
   display: flex;
@@ -1642,7 +1653,7 @@ li.react-datepicker__time-list-item--disabled:hover {
   background-color: rgba(0, 0, 0, 0.14);
   position: -webkit-sticky;
   position: sticky;
-  top: 6.4rem;
+  top: 0;
   z-index: 10; }
   @media (max-width: 56.25em) {
     .sticky-nav {
@@ -1693,9 +1704,9 @@ li.react-datepicker__time-list-item--disabled:hover {
   margin: 0 auto;
   max-width: 114rem;
   text-align: right;
-  top: 11.5rem;
+  top: 5.1rem;
   height: 0;
-  z-index: 2; }
+  z-index: 1; }
   @media (max-width: 56.25em) {
     .section-side-form {
       display: none; } }
